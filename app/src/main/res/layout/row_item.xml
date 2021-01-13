@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/black2"
+    android:paddingHorizontal="20dp"
+    android:paddingVertical="10dp"
+    android:layout_marginBottom="2dp">
+    <TextView
+        android:id="@+id/tv_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+    <CheckBox
+        android:id="@+id/tv_CBox"
+        android:layout_width="wrap_content"
+        android:layout_height="25sp"
+        android:text="To Do Checkbox"
+        android:textColor="@color/white"
+        android:buttonTint="@color/blue1"
+        android:focusable="false"/>
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray"
+        android:text="Deskripsi Line 1\nLine 2"
+        android:maxLines="2"
+        android:paddingStart="32dp"/>
+    <TextView
+        android:drawableEnd="@drawable/ic_alarm2"
+        android:id="@+id/tv_alarm"
+        android:paddingStart="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="5dp"
+        android:gravity="right"
+        android:textStyle="italic"
+        android:textColor="@color/gray"
+        android:text="Tgl time"
+        android:textSize="12dp"/>
+
+
+</LinearLayout>

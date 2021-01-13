@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddActivity"
+    android:background="@color/black1">
+    <EditText
+        android:id="@+id/et_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        android:visibility="gone"/>
+    <EditText
+        android:id="@+id/et_title"
+        android:hint="Masukkan Nama Task"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/blue1"
+        android:textSize="22sp"
+        android:gravity="top"
+        android:paddingHorizontal="18dp"
+        tools:ignore="MissingConstraints"
+        android:textColor="@color/white"/>
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@+id/et_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_text"
+            android:drawableLeft="@drawable/ic_desc"
+            android:drawablePadding="10dp"
+            android:hint="Masukkan Deskripsi"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="17dp"
+            android:textColorHint="@color/gray2"
+            android:textSize="16sp"
+            android:textColor="@color/white"/>
+        <EditText
+            android:id="@+id/et_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_text"
+            android:drawableLeft="@drawable/ic_date"
+            android:drawablePadding="10dp"
+            android:hint="Masukkan Tanggal Pengingat"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="17dp"
+            android:textColorHint="@color/gray2"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:textIsSelectable="false" />
+        <EditText
+            android:id="@+id/et_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_text"
+            android:drawableLeft="@drawable/ic_alarm"
+            android:drawablePadding="10dp"
+            android:hint="Masukkan Waktu Pengingat"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="17dp"
+            android:textColorHint="@color/gray2"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:textIsSelectable="false" />
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
