@@ -1,4 +1,4 @@
-# MinToDo
+# MiniToDo
 
 ## To Do List APP with SQLite Database
 - Android Studio
